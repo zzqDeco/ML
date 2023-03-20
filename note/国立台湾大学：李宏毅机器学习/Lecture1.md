@@ -74,9 +74,9 @@ Develop general purpose knowledge
 
 Learn How to Learn
 
-我们想要机器从已知的我们找到的各种映射，找到一种通用的范式，能够自行找到一种学习的方式无需我们准备资料即可自行学习
+我们想要机器从已知的我们找到的各种映射，找到一种通用的范式，能够自行找到一种学习的方式从学习方式中找寻新的学习方式
 
-Meta Learning 明显的与 Life-long Learning 有关联
+Meta Learning 明显的与 Life-long Learning 有关联，也与 Few-shot Learning 相关
 
 ## One Example
 
