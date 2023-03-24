@@ -94,4 +94,4 @@ $P \land \lnot P \Leftrightarrow 0$
 
 我们将要接触一种完全不同于命题逻辑的逻辑系统：First-Order Logic
 
-实际上就是谓词逻辑
+实际上就是谓词逻辑，全称量词，存在量词
