@@ -53,5 +53,63 @@ $$
 
 概率分布是指在给定空间中变量出现不同情况的概率
 
-概率分布的一个固有性质是无论你在哪一个空间考虑
+概率分布的一个固有性质是无论你在哪一个空间考虑概率总和都是1
+
+### independence
+
+一个重要的关于概率的想法就是independence，就是说在给定空间上一个变量的情况并不会对另一个变量的概率分布产生影响
+
+$P(B)=P(B|A)$
+
+上述式子表现了我们independence是指的什么
+
+显然，下面的式子也是成立的
+
+$P(A\wedge B)=P(A)P(B)$
+
+### Bayes' Rule
+
+$P(a)P(b|a)=P(b)P(a|b)$
+
+$P(b|a)=\frac{P(a|b)P(b)}{P(a)}$
+
+这意味着我们在知道一个条件概率大情况下很容易知道另一个
+
+我们只需要选择计算两个条件概率中比较容易的那一个，就可以得到both
+
+这是Bayes' Rule的基本用法
+
+### some rule
+
+#### Negation
+
+$P(\neg a)=1-P(a)$
+
+#### Inclusion-Exclusion
+
+$P(a\vee b)=P(a)+P(b)-P(a\wedge b)$
+
+#### Marginalization
+
+$P(a)=P(a\wedge b)+P(a\wedge(\neg b))$
+
+这东西可拓展到b的概率分布空间上
+
+### Bayesian network
+
+data structure that represents the dependencies among random variables
+
+从上面的rules中我们可以发现，变量与变量之间有复杂的离散的关联关系，我们用Bayesian network就可以捕获到变量与变量之间的复杂关系
+
+这个网络是一个有向图，每一个点代表一个变量，每条边代表两个变量之间的相互作用，一般认为起点是重点的原因，我们需要知道在起点成立的情况下终点成立的概率，然后在这个DAG上从头开始进行松弛，得到最终的结果
+
+### Inference and Approximate Inference
+
+通过完全搜索，或者随机游走的形式，进行推理
+
+### Markov assumption
+
+#### Markov chain
+
+Markov假设是指相同地位的一系列变量有前后线性变换形式的概率关系，在这种情况下，我们可以通过线性变换得到一些关于概率的信息
 
