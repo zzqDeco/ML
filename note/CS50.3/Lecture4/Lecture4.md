@@ -140,3 +140,18 @@ $$
 #### example
 
 Nim游戏
+
+## unsupervised learning
+
+无监督学习
+
+没有label，对于目标不好区分
+
+### clustering
+
+聚类，将一些点分类为相似的簇
+
+#### k-means clustering
+
+基于中心的分簇，不断转移中心，$k-means$的缺点非常明显，他不一定在数学意义上能够收敛，或者收敛效果很差
+
